@@ -1,3 +1,3 @@
 function showAlert() {
-    alert("Hello! This is a sample alert.");
+    alert("Whats App guys Im Mahiran!!");
 }
