@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Advanced Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png">
     <script defer src="script.js"></script> <!-- Linking JavaScript file -->
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Welcome to Our Website</h1>
+        <h1>Welcome to Our Advanced Website</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,34 +23,30 @@
     </header>
 
     <main>
-        <p>Welcome to my Website!</p>
 
-        <h1>Whats App</h1>    
-        <h2>Guys</h2>
-        <h3>Im</h3>
-        <h4>MAHIRAN</h4>
-        <h5>YE</h5>
-        <h6>YO</h6>
+        <!-- Heading Variations -->
+        <h1>Hello</h1>    
+        <h2>Welcome</h2>
+        <h3>To</h3>
+        <h4>My</h4>
+        <h5>Website</h5>
+        <h6>Enjoy!</h6>
 
-        <p>Whatsapp guys im Mahiran</p>
+        <!-- Paragraph -->
+        <p>This is an interactive website with various elements.</p>
 
-        <a href="https://www.canva.com/">Canva</a>
+        <!-- Hyperlink -->
+        <a href="https://www.canva.com/" target="_blank">Visit Canva</a>
 
         <!-- Real-Time Clock -->
         <h2>Current Time:</h2>
         <p id="clock">Loading...</p>
 
-        <!-- Dark Mode Toggle Button -->
+        <!-- Interactive Buttons -->
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-        <!-- Interactive Button -->
-        <button id="alertButton" onclick="showAlert()">Click Me</button>
-
-        <!-- Random Background Changer -->
-        <button onclick="changeBackgroundColor()">Change Background Color</button>
-
-        <!-- Scroll to Top Button -->
+        <button onclick="changeBackgroundColor()">Random Background</button>
         <button onclick="scrollToTop()">Scroll to Top</button>
+        <button id="openModal">Open Modal</button>
 
         <!-- Contact Form -->
         <h2>Contact Us</h2>
@@ -58,22 +57,51 @@
             <button type="submit">Submit</button>
         </form>
 
+        <!-- Adding Images -->
+        <img src="images/lol.png" alt="Sample Image" class="hover-zoom">
+        <img src="images/Red.png" alt="Sample Image" class="hover-zoom">
 
-        <!-- Interactive Button -->
-        <button id="alertButton" onclick="showAlert()">Click Me</button>
-
-
-        <!-- Adding an image -->
-        <img src="images/Red.png" alt="Sample Image" width="300">
-
-        <!-- Adding an iframe (YouTube video example) -->
+        <!-- Embedded YouTube Video (iframe) -->
         <h2>Watch this video:</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=vpRkAoCqX3o&ab_channel=CharmingData" title="YouTube video player" 
-            frameborder="0" allowfullscreen></iframe>
+        <iframe id="videoFrame" width="560" height="315" 
+            src="https://www.youtube.com/embed/vpRkAoCqX3o" 
+            title="YouTube Video" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Resizable & Draggable iframe -->
+        <h2>Google Maps:</h2>
+        <iframe id="mapFrame" src="https://maps.google.com/maps?q=New+York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+        <!-- Table -->
+        <h2>Sample Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <!-- Modal (Hidden Initially) -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal">&times;</span>
+                <p>This is a modal popup!</p>
+            </div>
+        </div>
+
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Website. All rights reserved.</p>
+        <p>&copy; 2025 Advanced Website. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
