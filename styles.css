@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    padding-bottom: 120px; /* Ensures footer does not overlap content */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header, 
+.dark-mode footer {
+    background-color: #111;
+}
+
+.dark-mode nav ul li a {
+    color: #ddd;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Button Styling */
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Button Animation */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Image Styling */
+img {
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Iframe Styling */
+iframe {
+    border: 3px solid #333;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 560px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+iframe:hover {
+    border-color: #ffcc00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #444;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, opacity 0.3s;
+    opacity: 0.8;
+}
+
+#scrollToTop:hover {
+    background-color: #ffcc00;
+    color: black;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
